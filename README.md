@@ -4,4 +4,5 @@
 Welcome to JavaScript Programming! 
 For specific task instructions and requirements for this assessment, please refer to the course page.
  
-
+Student ID: 012709208
+Angular version: 21.1.0
