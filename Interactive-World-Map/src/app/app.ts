@@ -1,9 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { SVG } from './svg/svg';
+import { WorldBank } from './world-bank';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, SVG],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
