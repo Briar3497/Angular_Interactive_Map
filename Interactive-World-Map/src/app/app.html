@@ -360,13 +360,26 @@
 
 =======
 <main>
-  <div></div>
-  <div>
-    
+  <div class="container">
+    <div class="map-section">
+      <router-outlet />
+    </div>
+    <div class="info-section">
+      <h1>Interactive World Map</h1>
+      <h2>Country: country.name</h2>
+      <p>Capital: country.capitalCity</p>
+      <p>Region: country.region.value</p>
+      <p>Income Level: country.incomeLevel.value</p>
+      <p>Longitude: country.longitude</p>
+      <p>Latitude: country.latitude</p>
+    </div>
   </div>
 </main>
 
 >>>>>>> 4ea14e4 (finishes part D)
 
+<<<<<<< HEAD
 <router-outlet />
 >>>>>>> 155e83e (Fixes README.md and initializes angular app)
+=======
+>>>>>>> e9bb418 (adds svg element and finishes Part E)
