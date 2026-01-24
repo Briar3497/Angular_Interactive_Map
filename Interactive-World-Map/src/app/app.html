@@ -1,16 +1,16 @@
 <main>
   <div class="container">
     <div class="map-section">
-      <router-outlet />
+      <app-svg (countrySelected)="onCountrySelected($event)"></app-svg>
     </div>
     <div class="info-section">
-      <h1>Interactive World Map</h1>
-      <h2>Country: country.name</h2>
-      <p>Capital: country.capitalCity</p>
-      <p>Region: country.region.value</p>
-      <p>Income Level: country.incomeLevel.value</p>
-      <p>Longitude: country.longitude</p>
-      <p>Latitude: country.latitude</p>
+        <h1 class="title">Interactive World Map</h1>
+        <h2>Country: {{countryInfo().name}}</h2>
+        <p>Capital: {{countryInfo().capitalCity}}</p>
+        <p>Region: {{countryInfo().region}}</p>
+        <p>Income Level: {{countryInfo().incomeLevel}}</p>
+        <p>Longitude: {{countryInfo().longitude}}</p>
+        <p>Latitude: {{countryInfo().latitude}}</p>
     </div>
   </div>
 </main>
