@@ -36,7 +36,6 @@ export class App {
           latitude: response.latitude
         });
       }
-      console.log('Country info updated:', this.countryInfo);
     });
   }
 }
