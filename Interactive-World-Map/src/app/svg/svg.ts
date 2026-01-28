@@ -14,7 +14,6 @@ export class SVG {
 
   handleCountryClick(event: MouseEvent) {
     this.target = event.target as SVGElement;
-    console.log('Country clicked:', this.target.id);
     this.countrySelected.emit(this.target.id);
   }
 };

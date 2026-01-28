@@ -10,7 +10,6 @@ export class WorldBank {
 
   getCountryData(countryCode: string): Observable<any> {
     const url = `https://api.worldbank.org/v2/country/${countryCode}?format=json`;
-    console.log("Fetching data for country code:", countryCode);
     return this.http.get(url).pipe(map((response: any) => response[1][0]));
   }
 }
